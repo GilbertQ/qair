@@ -1,11 +1,11 @@
 
 import './App.css';
-import QuizComponent from './components/practicep';
+import TicTacToe from './components/practicep';
 
 function App() {
   return (
     <div>
-      <QuizComponent></QuizComponent>
+      <TicTacToe></TicTacToe>
     </div>
   );
 }
