@@ -3,31 +3,111 @@ import { Button, Typography, Grid, Box, Paper } from '@mui/material';
 
 const Qlang = () => {
   // Generate 500 English/French word pairs
-  const wordPairs = Array.from({ length: 10 }, (_, i) => ({
+  const wordPairs = Array.from({ length: 50 }, (_, i) => ({
     id: i,
     english: [
-      "Hello",
-      "Thank you",
-      "Please",
-      "Good morning",
-      "Good evening",
-      "Yes",
-      "No",
-      "Goodbye",
-      "How are you?",
-      "You're welcome"
+      "Windfall, lucky find",
+"Gawker, onlooker",
+"Old book",
+"To bungle, mess up",
+"To quibble, nitpick",
+"Resourceful person",
+"Change of scenery",
+"Astonished, amazed",
+"Clearing (in the sky)",
+"Fulfilled, blooming",
+"Nonsense, rubbish",
+"Far-fetched, eccentric",
+"Lazy person",
+"To stroll, wander aimlessly",
+"Greediness, gluttony",
+"Cheek, impudence",
+"Weakling, puny person",
+"Eccentric, oddball",
+"Indescribable, ineffable",
+"To dawdle, linger",
+"Crazy, eccentric",
+"Brats, bunch of kids",
+"Melancholy",
+"Delicacy, sweet treat",
+"Naive, simple-minded",
+"Junk, cheap trinkets",
+"Blunder, slip of the tongue",
+"Adventure, twist (in a story)",
+"Sparkling, bubbly",
+"Boor, uncouth person",
+"Schoolboy, immature",
+"Misunderstanding, mix-up",
+"Killjoy, spoilsport",
+"Racket, noise",
+"Fed up, sick and tired",
+"To daydream",
+"Riotous, boisterous",
+"Funny, amusing",
+"Serendipity",
+"Worry, concern",
+"Scapegoat, whipping boy",
+"Mess, chaos",
+"Din, racket",
+"Chaos, confusion",
+"Nerve, audacity",
+"To bother, worry",
+"Wander, roam",
+"Vagrant, wanderer",
+"Indecisive, wishy-washy",
+"To zigzag"
     ][i],
     french: [
-      "Bonjour",
-      "Merci",
-      "S'il vous plaît",
-      "Bonjour",
-      "Bonsoir",
-      "Oui",
-      "Non",
-      "Au revoir",
-      "Comment allez-vous?",
-      "De rien"
+      "Aubaine",
+"Badaud",
+"Bouquin",
+"Cafouiller",
+"Chipoter",
+"Débrouillard",
+"Dépaysement",
+"Ébahi",
+"Éclaircie",
+"Épanoui",
+"Fadaises",
+"Farfelu",
+"Flemmard",
+"Flâner",
+"Gourmandise",
+"Gouaille",
+"Gringalet",
+"Hurluberlu",
+"Inénarrable",
+"Lambiner",
+"Loufoque",
+"Marmaille",
+"Mélancolie",
+"Mignardise",
+"Niais",
+"Pacotille",
+"Pataquès",
+"Péripétie",
+"Pétillant",
+"Pignouf",
+"Potache",
+"Quiproquo",
+"Rabat-joie",
+"Raffut",
+"Ras-le-bol",
+"Rêvasser",
+"Ribouldingue",
+"Rigolo",
+"Sérendipité",
+"Souci",
+"Souffre-douleur",
+"Souk",
+"Tintamarre",
+"Tohu-bohu",
+"Toupet",
+"Turlupiner",
+"Vadrouille",
+"Vagabond",
+"Velléitaire",
+"Zigzaguer"
     ][i]
   }));
 
@@ -107,15 +187,15 @@ const Qlang = () => {
 
   return (
     <Box
-      sx={{
-        maxWidth: '800px',
-        mx: 'auto',
-        mt: 4,
-        p: 3,
-      }}
-      component={Paper}
-      elevation={3}
-    >
+    sx={{
+      maxWidth: '100vw',
+      mx: 'auto',
+      mt: 4,
+      p: 3,
+    }}
+    component={Paper}
+    elevation={3}
+  >
       <Typography variant="h4" align="center" gutterBottom>
         English-French Pairing Game
       </Typography>
