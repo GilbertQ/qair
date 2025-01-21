@@ -1,6 +1,6 @@
 
 import './App.css';
-import Qlang from './components/practicep';
+import Qlang from './components/practiceq';
 
 function App() {
   return (
