@@ -110,12 +110,12 @@ const PairingGame = () => {
 
   const getWordStyle = (word) => {
     if (matchedPairs.includes(word.id)) {
-      return { backgroundColor: "#e8f5e9", border: "1px solid #81c784" };
+      return { backgroundColor: "#008000", border: "1px solidrgb(199, 155, 129)" };
     }
     if (selectedWord && selectedWord.id === word.id) {
-      return { backgroundColor: "#bbdefb", border: "1px solid #64b5f6" };
+      return { backgroundColor: "#bbdefb", border: "1px solidrgb(100, 246, 112)" };
     }
-    return { backgroundColor: "#f5f5f5", border: "1px solid #cfd8dc" };
+    return { backgroundColor: "#f5f5f5", border: "1px solidrgb(100, 246, 112)" };
   };
 
   return (
@@ -128,33 +128,41 @@ const PairingGame = () => {
           Pairs to match: {currentPairsCount} | Matched:{" "}
           {matchedPairs.length / 2} | Score: {score}
         </Typography>
-
+        <Typography variant="h5" align="center" gutterBottom>
+          |
+        </Typography>
         {matchedPairs.length === gameWords.length && (
           <Alert severity="success" sx={{ mb: 2 }}>
             <Typography variant="h6">Congratulations! All pairs matched!</Typography>
           </Alert>
         )}
 
-        <Grid container spacing={2}>
-          {gameWords.map((word) => (
-            <Grid
-              item
-              xs={6}
-              key={word.id}
-              onClick={() => handleWordClick(word)}
-              sx={{
-                ...getWordStyle(word),
-                padding: 2,
-                textAlign: "center",
-                borderRadius: 2,
-                cursor: "pointer",
-                transition: "background-color 0.3s",
-              }}
-            >
-              {word.text}
-            </Grid>
-          ))}
-        </Grid>
+<Grid container spacing={2}>
+  {gameWords.map((word) => {
+    const wordLength = word.text.length;
+
+    return (
+      <Grid
+        item
+        key={word.id}
+        onClick={() => handleWordClick(word)}
+        sx={{
+          ...getWordStyle(word),
+          padding: 2,
+          textAlign: "center",
+          borderRadius: 2,
+          cursor: "pointer",
+          transition: "background-color 0.9s",
+          width: `${wordLength*1.25}ch`, // Set width based on word length
+          margin: '0.5rem'
+        }}
+      >
+        {word.text}
+      </Grid>
+    );
+  })}
+</Grid>
+
       </CardContent>
     </Card>
   );
