@@ -119,7 +119,7 @@ const PairingGame = () => {
   };
 
   return (
-    <Card sx={{ maxWidth: 600, mx: "auto", mt: 4, p: 2 }}>
+    <Card sx={{ width: '100%', height: '100%', mx: "auto", mt: 4, p: 2 }}>
       <CardContent>
         <Typography variant="h5" align="center" gutterBottom>
           French Vocabulary Pairing Game

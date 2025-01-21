@@ -1,11 +1,11 @@
 
 import './App.css';
-import qair from './components/practiceq';
+import PairingGame from './components/practiceq';
 
 function App() {
   return (
     <div>
-      <qair></qair>
+      <PairingGame></PairingGame>
     </div>
   );
 }
