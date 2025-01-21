@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Typography, Grid, Box, Paper } from '@mui/material';
 
-const Qlang = () => {
+const qair = () => {
   // Generate 500 English/French word pairs
   const wordPairs = Array.from({ length: 50 }, (_, i) => ({
     id: i,
@@ -250,4 +250,4 @@ const Qlang = () => {
   );
 };
 
-export default Qlang;
+export default qair;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Button, Typography, Grid, Box, Paper } from '@mui/material';
 
-const Qlang = () => {
+const qair = () => {
   const wordPairs = [
     // Add your word pairs here...
     ["Apathique", "Apathetic (lacking enthusiasm or concern)"],
@@ -123,4 +123,4 @@ const Qlang = () => {
   );
 };
 
-export default Qlang;
+export default qair;
